@@ -1,22 +1,30 @@
 import Nav from "react-bootstrap/Nav";
-import { Link } from "react-router";
+import { NavLink } from "react-router";
 
 export default function Header() {
   return (
     <header>
-      <Nav activeKey="/" className="justify-content-end bg-light">
+      <Nav className="justify-content-end bg-light">
         <Nav.Item>
-          <Nav.Link as={Link} to="/" className="text-secondary">
+          <Nav.Link as={NavLink} to="/" className="text-secondary" end>
             Accueil
           </Nav.Link>
         </Nav.Item>
         <Nav.Item>
-          <Nav.Link as={Link} to="/vetements" className="text-secondary">
+          <Nav.Link
+            as={NavLink}
+            to="/category/vetements"
+            className="text-secondary"
+          >
             Vêtements
           </Nav.Link>
         </Nav.Item>
         <Nav.Item>
-          <Nav.Link as={Link} to="/chaussures" className="text-secondary">
+          <Nav.Link
+            as={NavLink}
+            to="/category/chaussures"
+            className="text-secondary"
+          >
             Chaussures
           </Nav.Link>
         </Nav.Item>

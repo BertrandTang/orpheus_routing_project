@@ -4,6 +4,7 @@ import Category from "./pages/Category.jsx";
 import NotFound from "./pages/NotFound.jsx";
 import Layout from "./components/Layout.jsx";
 
+
 function App() {
   return (
     <Routes>
