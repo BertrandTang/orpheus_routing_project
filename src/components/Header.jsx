@@ -9,10 +9,8 @@ export default function Header() {
     <header>
       <Nav className="bg-light d-flex justify-content-between">
         <Nav.Item>
-          {match ? (
+          {match && (
             <p className="mb-0 py-2 ps-3">Catégorie : {match.params.query}</p>
-          ) : (
-            <p className="mb-0 py-2 ps-3">Bienvenue sur le site</p>
           )}
         </Nav.Item>
         <div className="d-flex">
