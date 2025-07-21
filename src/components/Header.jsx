@@ -1,5 +1,6 @@
 import Nav from "react-bootstrap/Nav";
 import { NavLink } from "react-router";
+import '../assets/css/Header.css'
 
 export default function Header() {
   return (
